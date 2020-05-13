@@ -41,9 +41,9 @@ public class TestTopicProducer {
         Channel channel = connection.createChannel();
 
         String[] routing_keys = new String[]{"usa.news", "usa.weather",
-                "europe.news", "europe.weather", "usa.news3"};
+                "europe.news", "europe.weather", "usa.news2"};
         String[] messages = new String[]{"美国新闻", "美国天气",
-                "欧洲新闻", "欧洲天气", "美国新闻3"};
+                "欧洲新闻", "欧洲天气", "美国新闻2"};
 
         //通过通道发送消息到队列
         for (int i = 0; i < routing_keys.length; i++) {
